@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<style>
+	img {
+		width: 100%;
+	}
+</style>
+
+<head>
+	<title>Style Reference</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	{
+	"entrypoints":[
+		{
+			"name":"one",
+			"file":"one.html"
+		},
+		{
+			"name":"two",
+			"file":"two.html"
+		}
+	]
+}
+</body>
+</html>

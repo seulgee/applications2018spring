@@ -1,0 +1,12 @@
+{
+	"entrypoints":[
+		{
+			"name":"Style 1",
+			"file":"one.html"
+		},
+		{
+			"name":"Style 2",
+			"file":"two.html"
+		}
+	]
+}

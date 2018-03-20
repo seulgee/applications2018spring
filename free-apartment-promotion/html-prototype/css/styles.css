@@ -1,0 +1,27 @@
+h1 {
+	font-family: "ff-cocon-pro", sans-serif;
+	font-size: 100pt;
+}
+
+body {
+
+}
+
+.side {
+	width: 40%;
+	display: inline-block;
+}
+
+img {
+	height: 100vh;
+}
+
+.headline {
+	display: inline-block;
+	vertical-align: top;
+	z-index: 3;
+}
+
+.headline h1 {
+	text-indent: -150px;
+}

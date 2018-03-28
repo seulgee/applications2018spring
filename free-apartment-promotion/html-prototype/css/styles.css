@@ -11,7 +11,11 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-nav {
+.nav-bottom {
+	display: none;
+}
+
+.nav-top {
 	position: fixed;
 	bottom: 0px;
 	left: 20px;
@@ -187,7 +191,7 @@ h1 .color-change {
 .hi p {
 	font-weight: 300;
 	font-size: 15pt;
-	line-height: 1.9em;
+	line-height: 1.8em;
 	color: #8c8c8c;
 	padding-top: 0;
 }
@@ -348,6 +352,12 @@ input[type=text] {
     font-weight: 500;
 }
 
+input {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 input[type=text]:focus {
     outline: none;
     opacity: .9;
@@ -423,12 +433,13 @@ b {
 #containerBox {
 	width: 70%;
 	margin: auto;
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 .thanks {
 	color: #F9947A;
 	text-shadow: -6px 6px 0px white;
+	margin-bottom: 50px;
 }
 
 #containerBox .main {
@@ -444,7 +455,7 @@ b {
 	text-transform: capitalize;
 }
 
-#countdown {
+#ty #countdown {
 	margin: auto;
 	width: 100%;
 	margin: 50px 0 50px 0;
@@ -503,6 +514,13 @@ b {
 
 /** RESPONSIVE //////////////////////////////////////////////////////**/
 
+@media only screen and (max-device-width: 1366px) {
+    .side {
+        background-attachment: scroll;
+        background-image: 40%;
+    }
+}
+
 @media only screen and (max-width:768px) {
 	#one {
 		height: 100vh;
@@ -528,23 +546,23 @@ b {
 
 @media only screen and (max-width:414px) {
 	h1 {
-		font-size: 90pt;
-	}
-
-	nav {
-		bottom: 10px;
+		font-size: 60pt;
 	}
 
 	.side {
 		background-position: center right;
 	}
 
+	.free {
+		translate: Ytransform(-20%);
+	}
+
 	#two {
-		height: 900px;
+		height: 950px;
 	}
 
 	.intro {
-		width: 95%;
+		width: 90%;
 		box-sizing: border-box;
 	}
 
@@ -587,11 +605,16 @@ b {
 
 	#countdown #clock {
 		font-size: 30pt;
-	margin-top: 10px;
-	margin-bottom: 0;
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+		margin-bottom: 0;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		box-sizing: border-box;
+	}
+
+	.sticky #clock {
+		margin-top: 0;
+		border: none;
 	}
 
 	.units {
@@ -602,8 +625,12 @@ b {
 		font-size: 20pt;
 	}
 
+	.intro .button {
+		padding-top: 30px;
+	}
+
 	.button-share, .button-yes {
-		width: 46.5%;
+		width: 45%;
 	}
 
 	.sticky {
@@ -618,12 +645,13 @@ b {
 	}
 
 	#three {
-		height: 900px;
+		height: 1100px;
 	}
 
 	.modal {
-		width: 95%;
+		width: 90%;
 		margin: auto;
+		padding-bottom: 0;
 	}
 
 	.signup {
@@ -640,9 +668,78 @@ b {
 		line-height: 20pt;
 	}
 
-	.containerBox {
-		width: 95%;
+	#ty {
+		height: 100vh;
 	}
+
+	#containerBox {
+		width: 90%;
+	}
+
+	.thanks {
+		font-size: 48pt;
+		text-align: center;
+	}
+
+	#containerBox .main {
+		font-size: 15pt;
+		line-height: 27pt;
+	}
+
+	.ty-main {
+		width: 100%;
+	}
+
+	#countdown #clock-ty {
+		font-size: 30pt;
+	}
+
+	.units-ty {
+		font-size: 16pt;
+	}
+
+	.clock-text {
+		font-size: 20pt;
+	}
+
+	.nav-bottom {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin: auto;
+		text-align: center;
+		width: 100%;
+		margin-top: 100px;
+	}
+
+	.container {
+		margin: auto;
+
+	}
+
+	.nav-bottom ul {
+		text-align: center;
+		margin: auto;
+		width: 100%;
+	}
+
+	.nav-bottom a {
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+
+	.nav-bottom li {
+		text-align: center;
+		margin: auto;
+		float: left;
+		padding: 0 10px 0 10px;
+	}
+
+	.nav-top {
+		display: none;
+	}
+
 }
 
 @media only screen and (max-width:375px) {
@@ -651,10 +748,11 @@ b {
 		padding: 0;
 		line-height: 1;
 		padding-top: 0px;
+		font-size: 50pt;
 	}
 
 	.headline h1:first-of-type {
-		margin: 70px 0 150px 0;
+		margin: 150px 0 150px 0;
 	}
 
 	.free {
@@ -664,15 +762,23 @@ b {
 	}
 
 	#two {
-		height: 1100px;
+		height: 900px;
 	}
 
 	#three {
-		height: 1000px;
+		height: 1200px;
+	}
+
+	.hi h1 {
+		font-size: 55pt;
 	}
 
 	.hi p {
 		font-size: 16pt;
+	}
+
+	#ty {
+		height: 750px;
 	}
 }
 

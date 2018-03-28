@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Thank You!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://use.typekit.net/pex0eoq.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500" rel="stylesheet">
+	<script defer src="/static/fontawesome/fontawesome-all.js"></script>
+</head>
+
+<body>
+	<section id="ty">
+		<div id="containerBox">
+		<div class="ty-main">
+			<h1 class="thanks">Thank You!</h1>
+			<p class="main">You are now one step closer to a Rent-Free year! We’ve sent you a confirmation email. Look out for updates from us in your inbox on <span class="june-bold">JUNE 15TH</span>!</p>
+		</div>
+		<div id="countdown"><p id="clock-ty"></p></div>
+		<div class="button">
+			<a href="index.html"><button class="button-back">Back To Home</button></a>
+		</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		var countDownDate = new Date("June 15, 2018 15:37:25").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+    		// Get todays date and time
+    		var now = new Date().getTime();
+    
+    		// Find the distance between now an the count down date
+    		var distance = countDownDate - now;
+    
+    		// Time calculations for days, hours, minutes and seconds
+   		 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+   		 	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    		document.getElementById("clock-ty").innerHTML = days + "<span class='units-ty'>days </span>" + hours + "<span class='units-ty'>hrs </span>" + minutes + "<span class='units-ty'>min </span>" + seconds + "<span class='units-ty'>sec </span>" + "<span class='clock-text'>'TIL THE REVEAL!</span>";
+    
+    		if (distance < 0) {
+        		clearInterval(x);
+        		document.getElementById("clock-ty").innerHTML = "EXPIRED";
+    		}
+		}, 1000);
+
+		</script>
+</body>
+
+</html>

@@ -1,27 +1,690 @@
 h1 {
 	font-family: "ff-cocon-pro", sans-serif;
 	font-size: 100pt;
+	font-style: italic;
+	padding-top: .5em;
+	margin: 0;
+	color: #1651FD;
 }
 
 body {
+	font-family: 'Ubuntu', sans-serif;
+}
 
+nav {
+	position: fixed;
+	bottom: 0px;
+	left: 20px;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+li {
+	font-weight: 300;
+	font-size: 20pt;
+	line-height: 30pt;
+	opacity: .3;
+	color: black;
+}
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+li:hover {
+	opacity: .7;
+	cursor: pointer;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
 }
 
 .side {
-	width: 40%;
-	display: inline-block;
-}
-
-img {
+	position: relative;
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 100vh;
 }
 
-.headline {
-	display: inline-block;
-	vertical-align: top;
-	z-index: 3;
+/*/
+.side .circle {
+	position: absolute;
+	top: 5%;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	background: white;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	z-index: 2;
+}
+/*/
+
+.background_img {
+	width: 100%;
+}
+
+.side .headline {
+	position: absolute;
+	display: block;
+	top: 3%;
+	width: 100%;
+	text-align: center;
 }
 
 .headline h1 {
-	text-indent: -150px;
+	padding: 0;
+	line-height: 1;
+	padding-top: 50px;
 }
+
+.headline h1:first-of-type {
+	margin-bottom: 150px;
+	margin-top: 30px;
+}
+
+.free {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+}
+
+h1 .color-change {
+	color: #1651FD;
+	font-style: normal;
+	letter-spacing: .1em;
+	-webkit-animation-name: color;
+    -webkit-animation-duration: 1s;
+    animation-name: color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes color {
+    0%   {color: #1651FD;}
+    25%  {color: #39E7DD; font-size: 110%}
+    50%  {color: #F9947A; font-size: 110%}
+    100% {color: #1651FD;}
+}
+
+@keyframes color {
+    0%   {color: #1651FD;}
+    25%  {color: #39E7DD; font-size: 110%}
+    50%  {color: #F9947A; font-size: 110%}
+    100% {color: #1651FD;}
+}
+
+.headline p {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 10pt;
+	padding-top: 0em;
+	color: #8c8c8c;
+}
+
+.nav-down {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	height: 80px;
+	width: 100%;
+	background-color: #F9947A;#FFD17D;#39E7DD;
+	text-align: center;
+}
+
+.nav-down .down {
+	color: white;
+	font-family: "ff-cocon-pro", sans-serif;
+	font-size: 30pt;
+	line-height: 80px;
+}
+
+.down a:link {
+	text-decoration: none;
+	transition: .3s;
+}
+
+.down a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.down a:hover {
+	color: black;
+	opacity: .4;
+}
+
+
+
+
+/** SECTION TWO /////////////////////////////////////////////////**/
+
+#two {
+
+}
+
+.intro {
+	width: 70%;
+	margin: auto;
+	z-index: 1;
+}
+
+.hi {
+	margin-bottom: 50px;
+}
+
+.hi p {
+	font-weight: 300;
+	font-size: 15pt;
+	line-height: 1.9em;
+	color: #8c8c8c;
+	padding-top: 0;
+}
+
+.hi .bold {
+	font-weight: 500;
+	color: #FFD17D;#1651FD;
+}
+
+.hi h1 {
+	color: #1651FD;
+	padding-top: 30px;
+	margin-bottom: 50px;
+	text-shadow: -6px 6px 0px #39E7DD;
+}
+
+#countdown #clock {
+	text-align: center;
+	font-family: "ff-cocon-pro", sans-serif;
+	font-size: 40pt;
+	color: #39E7DD;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+	border: 3px solid #39E7DD;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/**
+	background-image: url('../images/interior 2_mesh.jpg');
+	background-size: 1000px;
+	background-position: center top;
+**/
+
+.units {
+	color: #d5d5d5;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20pt;
+}
+
+.only {
+	font-size: 30pt;
+	font-family: 'Ubuntu', sans-serif;
+	color: #d5d5d5;
+}
+
+.intro .button {
+	text-align: center;
+	padding-top: 60px;
+}
+
+.button-share, .button-yes {
+	width: 40%;
+	padding: 15px 0;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	transition: .3s;
+}
+
+.button-share {
+	margin-right: 12px;
+	border: 2px solid #39E7DD;
+	background-color: #39E7DD;
+	color: white;
+}
+
+.button-yes {
+	margin-left: 12px;
+	border: 2px solid #1651FD;
+	background-color: #1651FD;
+	color: white;
+}
+
+.button-share:hover {
+	border: 2px solid #39E7DD;
+	background-color: white;
+	color: #39E7DD;
+	font-weight: 500;
+}
+
+.button-yes:hover {
+	border: 2px solid #1651FD;
+	background-color: white;
+	color: #1651FD;
+	font-weight: 500;
+}
+
+.ez {
+	color: #d5d5d5;
+	text-align: center;
+	font-style: italic;
+	padding-top: 15px;
+}
+
+
+
+
+/** SECTION THREE //////////////////////////////////////////////////**/
+
+#three {
+	background-color: #1651FD;
+	background: linear-gradient(to top right, #1651FD, #F9947A);
+}
+
+.modal {
+	width: 70%;
+	margin: auto;
+	z-index: 1;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: auto;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.sticky {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 0px;
+	background-color: white;
+	border: 0;
+	opacity: .9;
+}
+
+.signup {
+	color: #FFD17D;
+	text-shadow: -6px 6px 0px #1651FD;
+	margin-top: 65px;
+	padding-top: 0;
+	font-size: 100pt;
+	line-height: 1.1em;
+}
+
+input[type=text] {
+	position: relative;
+    width: 100%;
+    padding: 15px;
+    padding-right: 0px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 15px;
+    background: ;#39E7DD;
+    color: #1651FD;
+    font-weight: 500;
+}
+
+input[type=text]:focus {
+    outline: none;
+    opacity: .9;
+}
+
+b {
+	font-size: 15pt;
+	color: white;
+	font-weight: 300;
+}
+
+::placeholder {
+	font-style: italic;
+	opacity: .5;
+
+}
+
+#name_invalid, #email_invalid {
+	font-style: italic;
+	color: #F9947A;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.field {
+	margin-top: 50px;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix {
+	margin: auto;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.signupbtn {
+	width: 40%;
+	padding: 15px 0;
+	text-decoration: none;
+	cursor: pointer;
+	border: 2px solid #39E7DD;
+	border-radius: 15px;
+	background-color: #39E7DD;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	transition: .3s;
+}
+
+.signupbtn:hover {
+	background-color: white;
+	color: #39E7DD;
+	border: 3px solid #39E7DD;
+	font-weight: 500;
+}
+
+.terms {
+	font-weight: 300;
+	opacity: .7;
+}
+
+
+/** THANK YOU PAGE ////////////////////////////////////////////////////**/
+
+#ty {
+	background-color: #FFD17D;
+	background: linear-gradient(to top right, #39E7DD, #FFD17D);
+	height: 100vh;
+}
+
+#containerBox {
+	width: 70%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.thanks {
+	color: #F9947A;
+	text-shadow: -6px 6px 0px white;
+}
+
+#containerBox .main {
+	font-size: 20pt;
+	font-weight: 300;
+	line-height: 35pt;
+	color: #8c8c8c;#1651FD;
+}
+
+.june-bold {
+	font-weight: 500;
+	color: #F9947A;
+	text-transform: capitalize;
+}
+
+#countdown {
+	margin: auto;
+	width: 100%;
+	margin: 50px 0 50px 0;
+}
+
+ #countdown #clock-ty {
+	text-align: center; 
+	font-family: 'ff-cocon-pro', sans-serif;
+	font-size: 40pt;
+	color: #FFD17D;
+	margin-top: 0px;
+	margin-bottom: 0;
+	width: 100%;
+	border: 3px solid #FFD17D;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.units-ty, .clock-text {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20pt;
+	color: #8c8c8c;
+	opacity: .6;
+}
+
+.clock-text {
+	font-size: 30pt;
+}
+
+#containerBox .button {
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;
+	width: 100%;
+}
+
+.button-back {
+	border: 2px solid #F9947A;#39E7DD;#1651FD;
+	background-color: #F9947A;#39E7DD;#1651FD;
+	color: white;
+	width: 40%;
+	padding: 15px 0;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	transition: .3s;
+}
+
+.button-back:hover {
+	border: 2px solid #39E7DD;
+	background-color: white;
+	color: #39E7DD;
+	font-weight: 500;
+}
+
+/** RESPONSIVE //////////////////////////////////////////////////////**/
+
+@media only screen and (max-width:768px) {
+	#one {
+		height: 100vh;
+	}
+
+	.side {
+		background-position: center;
+	}
+
+	#three {
+		height: 1020px;
+	}
+
+	.signup {
+		font-size: 70pt;
+		line-height: 90pt;
+	}
+
+	#ty {
+		height: 1200px;
+	}
+}
+
+@media only screen and (max-width:414px) {
+	h1 {
+		font-size: 90pt;
+	}
+
+	nav {
+		bottom: 10px;
+	}
+
+	.side {
+		background-position: center right;
+	}
+
+	#two {
+		height: 900px;
+	}
+
+	.intro {
+		width: 95%;
+		box-sizing: border-box;
+	}
+
+	.hi h1 {
+		padding-top: 30px;
+		padding-bottom: 20px;
+		margin: auto;
+		font-size: 65pt;
+		text-align: center;
+	}
+
+	.hi {
+		margin-bottom: 0;
+	}
+
+	h1 .color-change {
+	color: #1651FD;
+	font-style: normal;
+	letter-spacing: .1em;
+	-webkit-animation-name: color;
+    -webkit-animation-duration: 1s;
+    animation-name: color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+	}
+
+	@-webkit-keyframes color {
+    0%   {color: #1651FD;}
+    25%  {color: #39E7DD;}
+    50%  {color: #F9947A;}
+    100% {color: #1651FD;}
+	}
+
+	@keyframes color {
+    0%   {color: #1651FD;}
+    25%  {color: #39E7DD;}
+    50%  {color: #F9947A;}
+    100% {color: #1651FD;}
+	}
+
+	#countdown #clock {
+		font-size: 30pt;
+	margin-top: 10px;
+	margin-bottom: 0;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+	.units {
+		font-size: 20pt;
+	}
+
+	.only {
+		font-size: 20pt;
+	}
+
+	.button-share, .button-yes {
+		width: 46.5%;
+	}
+
+	.sticky {
+		font-size: 13pt;
+	}
+
+	input[type=text] {
+   		width: 100%;
+    	padding: 20px;
+    	padding-right: 0px;
+    	margin: 5px 0 22px 0;
+	}
+
+	#three {
+		height: 900px;
+	}
+
+	.modal {
+		width: 95%;
+		margin: auto;
+	}
+
+	.signup {
+		font-size: 53pt;
+		line-height: 65pt;
+		text-align: center;
+	}
+
+	.signupbtn {
+		width: 100%;
+	}
+
+	.terms {
+		line-height: 20pt;
+	}
+
+	.containerBox {
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width:375px) {
+	
+	.headline h1 {
+		padding: 0;
+		line-height: 1;
+		padding-top: 0px;
+	}
+
+	.headline h1:first-of-type {
+		margin: 70px 0 150px 0;
+	}
+
+	.free {
+		top: 60%;
+		transform: translate(-50%, -30%);
+		left: 50%;
+	}
+
+	#two {
+		height: 1100px;
+	}
+
+	#three {
+		height: 1000px;
+	}
+
+	.hi p {
+		font-size: 16pt;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

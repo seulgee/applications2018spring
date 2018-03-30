@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/pex0eoq.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -68,16 +69,18 @@
         				<button id="submitButton" class="signupbtn">Sign Me Up!</button>
       				</div>
     			</div>
-    			<nav class="nav-bottom">
-					<ul>
-						<a href="#one"><li>HOME</li></a>
-						<a href="#two"><li>ABOUT</li></a>
-						<a href="#three"><li>SIGN UP</li></a>
-					</ul>
-				</nav>
+    			
 		</div>
 
 	</section>
+
+	<nav class="nav-bottom">
+					<ul>
+						<span class="home"><a href="#one"><li>HOME</li></a></span>
+						<span class="about"><a href="#two"><li>ABOUT</li></a></span>
+						<span class="signuppg"><a href="#three"><li>SIGN UP</li></a></span>
+					</ul>
+				</nav>
 
 
 	<script type="text/javascript">
@@ -86,13 +89,10 @@
 		// Update the count down every 1 second
 		var x = setInterval(function() {
 
-    		// Get todays date and time
     		var now = new Date().getTime();
-    
-    		// Find the distance between now an the count down date
+
     		var distance = countDownDate - now;
     
-    		// Time calculations for days, hours, minutes and seconds
    		 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
    		 	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -144,6 +144,20 @@
 			}
 		}
 
+		//SCROLL FUNCTION//////////////////////
+
+			$('.down').eq(0).click(function () {
+    			$('html, body').animate({
+        			scrollTop: $('.intro').eq(0).offset().top
+    			}, 500);
+			});
+
+			$('.button-yes').eq(0).click(function () {
+    			$('html, body').animate({
+        			scrollTop: $('.modal').eq(0).offset().top
+    			}, 500);
+			});
+			
 		</script>
 	
 </body>

@@ -144,13 +144,13 @@ h1 .color-change {
 	bottom: 0px;
 	height: 80px;
 	width: 100%;
-	background-color: #F9947A;#FFD17D;#39E7DD;
+	background-color: white;#FFD17D;#39E7DD;
 	text-align: center;
-	opacity: .7;
+	opacity: .5;
 }
 
 .nav-down .down {
-	color: white;
+	color: #FFD17D;white;
 	font-family: "ff-cocon-pro", sans-serif;
 	font-size: 30pt;
 	line-height: 80px;
@@ -163,12 +163,12 @@ h1 .color-change {
 
 .down a:visited {
 	text-decoration: none;
-	color: white;
+	color: black;#FFD17D;
 }
 
 .down a:hover {
-	color: black;
-	opacity: .4;
+	color: #FFD17D;black;
+	opacity: 1;
 }
 
 
@@ -553,7 +553,7 @@ b {
 	}
 
 	.side {
-		background-position: center right;
+		background-position: center left;
 	}
 
 	.free {

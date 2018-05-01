@@ -6,6 +6,12 @@
 		width: 70%;
 		margin: auto;
 		line-height: 1.5em;
+		background: black;
+		color: white;
+	}
+
+	h3 {
+		text-align: center;
 	}
 
 	p {
@@ -29,22 +35,95 @@
 	}
 
 	a:link {
+		text-decoration: none;
 		list-style: none;
+		color: #00FF7F;	
 	}
 
 	a:visited {
 		list-style: none;
+		color: #00FF7F;
 	}
+
+	.main {
+
+		transform: translateY(50%);
+	}
+
+	.tooltip {
+		z-index: 1
+	}
+
+	.text-one {
+		display: none;
+		position: absolute;
+		left: 44.6%;
+		top: -17%;
+		z-index: 5;
+	}
+
+	.text-two {
+		display: none;
+		position: absolute;
+		left: 36.5%;
+		top: 21.5%;
+		z-index: 5;
+	}
+
+	.text-three {
+		display: none;
+		position: absolute;
+		left: 38.5%;
+		top: 60%;
+		z-index: 5;
+		padding-bottom: 2%;
+	}
+
+	.tooltip:hover .text-one, .tooltip:hover .text-two, .tooltip:hover .text-three {
+		display: block;
+		background: black;
+	}
+
 </style>
 
 <head>
-	<title>Options</title>
+	<title>Final</title>
 	<meta name="viewport" content="width=device-width">
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 </head>
 
 <body>
-	<h3><a href="https://invis.io/4YHJ2GARB7C">Let's Make Some Donuts!</a></h3>
+	<div class="main">
+	<div id="bike-finder" class="tooltip">
+		<h3>Bike Finder</h3>
+			<h3 class="text-one"><a href="https://invis.io/6JHSMLNFRYK" target="_blank">Tryna Bike?</a></h3>
+	</div>
+	<div id="free-apt-promo" class="tooltip">
+		<h3>Free Apartment Promotion</h3>
+			<h3 class="text-two"><a href="https://seulgee.github.io/applications2018spring/free-apartment-promotion/html-prototype/index.html" target="_blank">Still Can't Afford To Pay Rent?</a></h3>
+	</div>
+	<div id="configurator" class="tooltip">
+		<h3>Donut Configurator</h3>
+			<h3 class="text-three"><a href="https://invis.io/4YHJ2GARB7C" target="_blank">Let's Make Some Donuts!</a></h3>
+	</div>
+	</div>
+
+<script>
+
+</script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,6 +20,7 @@ body {
 	bottom: 0px;
 	left: 20px;
 	text-decoration: none;
+	z-index: 15;
 }
 
 ul {
@@ -35,17 +36,19 @@ li {
 	color: black;
 }
 
-a:link {
+.nav-top a:link {
 	text-decoration: none;
 	color: black;
+	transition: .3s;
 }
 
-li:hover {
-	opacity: .7;
+.nav-top li:hover {
+	color: #1651FD;
+	opacity: 1;
 	cursor: pointer;
 }
 
-a:visited {
+.nav-top a:visited {
 	text-decoration: none;
 	color: black;
 }
@@ -177,13 +180,15 @@ h1 .color-change {
 /** SECTION TWO /////////////////////////////////////////////////**/
 
 #two {
-
+	background-color: #1651FD;
+	background: linear-gradient(to top right, #1651FD, #F9947A);
 }
 
 .intro {
 	width: 60%;
 	margin: auto;
 	z-index: 1;
+	height: 100%;
 }
 
 .hi {
@@ -192,10 +197,11 @@ h1 .color-change {
 
 .hi p {
 	font-weight: 300;
-	font-size: 15pt;
+	font-size: 14pt;
 	line-height: 1.8em;
-	color: #8c8c8c;
+	color: white;#8c8c8c;
 	padding-top: 0;
+	opacity: .8;
 }
 
 .hi .bold {
@@ -204,16 +210,21 @@ h1 .color-change {
 }
 
 .hi h1 {
+	font-size: 70pt;
 	color: #FFD17D;#39E7DD;#1651FD;
-	padding-top: 30px;
+	padding-top: 50px;
 	margin-bottom: 50px;
 	text-shadow: -6px 6px 0px #39E7DD;#FFD17D;#39E7DD;
+}
+
+#countdown {
+	z-index: 10;
 }
 
 #countdown #clock {
 	text-align: center;
 	font-family: "ff-cocon-pro", sans-serif;
-	font-size: 40pt;
+	font-size: 30pt;
 	color: #39E7DD;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -221,6 +232,7 @@ h1 .color-change {
 	border: 3px solid #39E7DD;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	z-index: 11;
 }
 
 /**
@@ -230,7 +242,7 @@ h1 .color-change {
 **/
 
 .units {
-	color: #d5d5d5;
+	color: #FFD17D;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 20pt;
 }
@@ -238,7 +250,7 @@ h1 .color-change {
 .only {
 	font-size: 30pt;
 	font-family: 'Ubuntu', sans-serif;
-	color: #d5d5d5;
+	color: #FFD17D;
 }
 
 .intro .button {
@@ -288,7 +300,8 @@ h1 .color-change {
 	color: #d5d5d5;
 	text-align: center;
 	font-style: italic;
-	padding-top: 15px;
+	padding-top: 25px;
+	padding-bottom: 30px;
 }
 
 
@@ -296,27 +309,29 @@ h1 .color-change {
 
 /** SECTION THREE //////////////////////////////////////////////////**/
 
+/**
 #three {
 	background-color: #1651FD;
 	background: linear-gradient(to top right, #1651FD, #F9947A);
 }
+**/
 
-.modal {
+.formbox {
+	position: relative;
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	margin-top: 0;
+	
+}
+
+.container {
 	width: 60%;
 	margin: auto;
 	padding-top: 100px;
 	padding-bottom: 50px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.container {
-	margin: auto;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 .sticky {
@@ -333,11 +348,11 @@ h1 .color-change {
 
 .signup {
 	color: #FFD17D;
-	text-shadow: -6px 6px 0px #1651FD;
+	text-shadow: -6px 6px 0px #F9947A;#1651FD;
 	margin-top: 65px;
 	padding-top: 0;
-	font-size: 100pt;
-	line-height: 1.1em;
+	font-size: 70pt;
+	line-height: 1.2em;
 }
 
 input[type=text] {
@@ -378,7 +393,7 @@ b {
 
 #name_invalid, #email_invalid {
 	font-style: italic;
-	color: #F9947A;
+	color: black;
 	margin-bottom: 0;
 	margin-top: 10px;
 }
@@ -419,11 +434,12 @@ b {
 
 .terms {
 	font-weight: 300;
-	opacity: .7;
+	opacity: .5;
 }
 
 
 /** THANK YOU PAGE ////////////////////////////////////////////////////**/
+
 
 #ty {
 	background-color: #FFD17D;
@@ -444,9 +460,9 @@ b {
 }
 
 #containerBox .main {
-	font-size: 20pt;
+	font-size: 14pt;
 	font-weight: 300;
-	line-height: 35pt;
+	line-height: 1.8em;
 	color: #8c8c8c;#1651FD;
 }
 
@@ -507,9 +523,9 @@ b {
 }
 
 .button-back:hover {
-	border: 2px solid #39E7DD;
+	border: 2px solid #F9947A;#39E7DD;
 	background-color: white;
-	color: #39E7DD;
+	color: #F9947A;#39E7DD;
 	font-weight: 500;
 }
 
@@ -524,8 +540,8 @@ b {
 
 @media only screen and (max-width:1088px) {
 	.signup {
-		font-size: 70pt;
-		line-height: 90pt;
+		font-size: 53pt;
+		line-height: 65pt;
 	}
 }
 
@@ -663,7 +679,7 @@ b {
 		height: 1100px;
 	}
 
-	.modal {
+	.formbox {
 		width: 90%;
 		margin: auto;
 		padding-bottom: 0;

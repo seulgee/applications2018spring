@@ -327,7 +327,7 @@ h1 .color-change {
 	
 }
 
-.container {
+.containerBox {
 	width: 60%;
 	margin: auto;
 	padding-top: 100px;
@@ -676,17 +676,22 @@ b {
 	}
 
 	#three {
-		height: 1100px;
+		height: 900px;
 	}
 
 	.formbox {
-		width: 90%;
+		width: 100%;
 		margin: auto;
 		padding-bottom: 0;
 	}
 
+	.containerBox {
+		width: 90%;
+		margin: auto;
+	}
+
 	.signup {
-		font-size: 53pt;
+		font-size: 35pt;
 		line-height: 65pt;
 		text-align: center;
 	}
@@ -739,6 +744,7 @@ b {
 	}
 
 	.nav-bottom {
+		z-index: 16;
 		position: relative;
 		display: inline-block;
 		vertical-align: top;
@@ -759,6 +765,7 @@ b {
 		vertical-align: top;
 		padding: 0 10px 0 10px;
 		font-size: 12pt;
+		color: white;
 	}
 
 	.nav-top {
@@ -795,7 +802,7 @@ b {
 	}
 
 	#three {
-		height: 1000px;
+		height: 900px;
 	}
 
 	.signup {

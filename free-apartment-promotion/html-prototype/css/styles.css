@@ -211,7 +211,7 @@ h1 .color-change {
 
 .hi h1 {
 	font-size: 70pt;
-	color: #FFD17D;#39E7DD;#1651FD;
+	color: white;#FFD17D;#39E7DD;#1651FD;
 	padding-top: 50px;
 	margin-bottom: 50px;
 	text-shadow: -6px 6px 0px #39E7DD;#FFD17D;#39E7DD;
@@ -256,6 +256,7 @@ h1 .color-change {
 .intro .button {
 	text-align: center;
 	padding-top: 60px;
+	margin-top: 30px;
 }
 
 .button-share, .button-yes {
@@ -577,7 +578,7 @@ b {
 	}
 
 	#two {
-		height: 850px;
+		height: 900px;
 	}
 
 	.intro {
@@ -628,10 +629,10 @@ b {
 
 	#countdown #clock {
 		font-size: 30pt;
-		margin-bottom: 0;
+		margin-bottom: 0px;
 		width: 100%;
 		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-bottom: 20px;
 		box-sizing: border-box;
 	}
 
@@ -728,7 +729,7 @@ b {
 	}
 
 	#countdown #clock-ty {
-		font-size: 30pt;
+		font-size: 20pt;
 	}
 
 	.units-ty {
@@ -736,7 +737,7 @@ b {
 	}
 
 	.clock-text {
-		font-size: 20pt;
+		font-size: 10pt;
 	}
 
 	.button-back {

@@ -29,9 +29,9 @@
 		</div>
 		<nav class="nav-top">
 			<ul>
-				<a href="#one"><li>HOME</li></a>
-				<a href="#two"><li>ABOUT</li></a>
-				<a href="#three"><li>SIGN UP</li></a>
+				<a href="#one"><li class="home">HOME</li></a>
+				<a href="#two"><li class="about">ABOUT</li></a>
+				<a href="#three"><li class="sign-up">SIGN UP</li></a>
 			</ul>
 		</nav>
 	</section>
@@ -155,6 +155,24 @@
 			$('.button-yes').eq(0).click(function () {
     			$('html, body').animate({
         			scrollTop: $('.formbox').eq(0).offset().top
+    			}, 500);
+			});
+
+			$('.home').eq(0).click(function () {
+    			$('html, body').animate({
+        			scrollTop: $('#one').eq(0).offset().top
+    			}, 500);
+			});
+
+			$('.about').eq(0).click(function () {
+    			$('html, body').animate({
+        			scrollTop: $('#two').eq(0).offset().top
+    			}, 500);
+			});
+
+			$('.sign-up').eq(0).click(function () {
+    			$('html, body').animate({
+        			scrollTop: $('#three').eq(0).offset().top
     			}, 500);
 			});
 			
